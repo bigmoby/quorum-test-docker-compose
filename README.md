@@ -4,25 +4,6 @@ _Based on work by benjaminion (https://github.com/ConsenSys/quorum-docker-Nnodes
 
 This tests the experimental setup to have geth (based on go-ethereum) and constellation run in separate docker instances, but in pairs such that each geth docker instance communicates with its corresponding constellation node docker instance via IPC instead of TCP.
 
-## Pre-requisite
-
-Build the docker images by launching
-
-```
-docker pull bigmoby/quorum
-```
-
-```
-docker pull bigmoby/constellation
-```
-
-from the project root. It should produce the following docker images:
-
-| Image                        | Description           | Needed for runtime? |
-| ---------------------------- |:---------------------:| -------------------:|
-| bigmoby/quorum         | geth node             | YES                 |
-| bigmoby/constellation  | constellation node    | YES                 |
-| bigmoby/quorum-builder | build environment     | NO                  |
 
 ## Generate configuration artifacts and docker-compose.yaml
 
