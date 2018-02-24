@@ -1,4 +1,4 @@
 #!/bin/bash
 
-rm -rf tmp/
+rm -rfv tmp/
 mkdir tmp
