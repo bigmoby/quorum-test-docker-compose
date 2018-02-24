@@ -200,7 +200,7 @@ rm -rf genesis.json static-nodes.json
 
 #### Create the docker-compose file ####################################
 
-cat > docker-compose.yml <<EOF
+cat > docker-compose.yaml <<EOF
 version: '2'
 services:
   bootnode:
@@ -221,7 +221,7 @@ for index in ${!ips[*]}; do
     ip=${ips[index]}; 
     cip=${cips[index]}; 
 
-    cat >> docker-compose.yml <<EOF
+    cat >> docker-compose.yaml <<EOF
   constellation_$n:
     container_name: constellation_$n
     image: $image_constellation
@@ -251,7 +251,7 @@ for index in ${!ips[*]}; do
 EOF
 done
 
-cat >> docker-compose.yml <<EOF
+cat >> docker-compose.yaml <<EOF
 
 networks:
   quorum_net:
