@@ -40,6 +40,14 @@ Refer to the *setup.sh* file itself for the full code.
 docker-compose -f tmp/docker-compose.yaml up
 ```
 
+##Attach to node
+
+```
+geth attach ipc:/qdata/ethereum/geth.ipc
+```
+
+
+
 ## Advanced Topics
 
 ### Configuration options
